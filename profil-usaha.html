@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Usaha Mandiri - Demo | Averix Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .demo-header { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); color: white; padding: 2rem 0; }
+    .demo-nav { background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 50; }
+    .demo-nav-container { max-width: 1100px; margin: 0 auto; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+    .demo-logo { font-weight: 700; font-size: 1.25rem; color: #0f172a; display: flex; align-items: center; gap: 0.5rem; }
+    .demo-nav-links { display: flex; gap: 1.5rem; }
+    .demo-nav-links a { color: #1a1a1a; font-weight: 500; font-size: 0.9rem; }
+    .demo-hero { padding: 3rem 0; background: linear-gradient(180deg, #f8fafc 0%, white 100%); }
+    .demo-hero-grid { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+    .demo-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.25rem; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
+    .demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .demo-item { border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.25rem; }
+    .demo-item-icon { width: 50px; height: 50px; background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #475569; font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .demo-footer { background: #0f172a; color: white; padding: 2rem 0 1rem; text-align: center; }
+    .demo-back { position: fixed; bottom: 1.25rem; left: 1.25rem; background: white; color: #0f172a; padding: 0.625rem 1rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); font-weight: 600; display: flex; align-items: center; gap: 0.5rem; z-index: 100; }
+    .demo-cta { background: linear-gradient(135deg, #0f172a 0%, #334155 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+    @media (max-width: 968px) { .demo-hero-grid { grid-template-columns: 1fr; } .demo-nav-links { display: none; } }
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.15); padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.75rem; margin-bottom: 0.75rem;">
+        <i class="fas fa-eye"></i> DEMO KONSEP - Bukan proyek pelanggan nyata
+      </div>
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Profil Usaha Mandiri</h1>
+      <p style="opacity: 0.95;">Tentang usaha, layanan, keunggulan, lokasi dan kontak</p>
+    </div>
+  </header>
+
+  <nav class="demo-nav">
+    <div class="demo-nav-container">
+      <div class="demo-logo">
+        <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #0f172a 0%, #334155 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">U</div>
+        <span>Usaha Mandiri</span>
+      </div>
+      <div class="demo-nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <a href="#" class="demo-cta" onclick="selectDesign('profil-usaha', 'Profil Usaha Mandiri'); return false;">
+        <i class="fab fa-whatsapp"></i> Pilih Desain Ini
+      </a>
+    </div>
+  </nav>
+
+  <section id="beranda" class="demo-hero">
+    <div class="demo-hero-grid">
+      <div>
+        <h2 style="font-size: 2rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem;">Solusi Terpercaya untuk Kebutuhan Anda</h2>
+        <p style="color: #4a4a4a; margin-bottom: 1.5rem; line-height: 1.8;">Usaha mandiri yang melayani berbagai kebutuhan masyarakat dengan profesionalisme dan kepercayaan.</p>
+        <a href="#layanan" class="demo-cta" style="margin-right: 0.75rem;">Lihat Layanan</a>
+      </div>
+      <div class="demo-card" style="text-align: center;">
+        <div style="height: 200px; background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #475569; margin-bottom: 1rem;">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3 style="color: #0f172a; margin-bottom: 0.5rem;">Berkualitas & Terpercaya</h3>
+        <p style="color: #4a4a4a; font-size: 0.875rem;">Sejak lama melayani pelanggan</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="section" style="background: #f8f9fa;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; margin-bottom: 1rem;">Tentang Kami</h2>
+        <p style="color: #4a4a4a; line-height: 1.8; margin-bottom: 1.5rem;">Usaha Mandiri berdiri untuk memberikan solusi terbaik bagi masyarakat. Kami berkomitmen untuk melayani dengan jujur, profesional, dan bertanggung jawab. Kepercayaan pelanggan adalah prioritas utama kami.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan" class="section">
+    <div class="container">
+      <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; text-align: center; margin-bottom: 0.5rem;">Layanan & Keunggulan</h2>
+      <p style="text-align: center; color: #4a4a4a; margin-bottom: 2rem;">Apa yang bisa kami tawarkan</p>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-item-icon"><i class="fas fa-check"></i></div>
+          <h4 style="color: #0f172a; margin-bottom: 0.5rem;">Pelayanan Ramah</h4>
+          <p style="color: #4a4a4a; font-size: 0.875rem;">Tim yang siap membantu dengan senyum</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon"><i class="fas fa-award"></i></div>
+          <h4 style="color: #0f172a; margin-bottom: 0.5rem;">Kualitas Terjamin</h4>
+          <p style="color: #4a4a4a; font-size: 0.875rem;">Hasil pekerjaan yang memuaskan</p>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-icon"><i class="fas fa-handshake"></i></div>
+          <h4 style="color: #0f172a; margin-bottom: 0.5rem;">Kepercayaan</h4>
+          <p style="color: #4a4a4a; font-size: 0.875rem;">Berdiri atas kepercayaan pelanggan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="section" style="background: #f8f9fa;">
+    <div class="container">
+      <h2 style="font-size: 1.75rem; font-weight: 800; color: #0f172a; text-align: center; margin-bottom: 2rem;">Lokasi & Kontak</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto;">
+        <div class="demo-card">
+          <i class="fas fa-map-marker-alt" style="color: #475569; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+          <h4 style="color: #0f172a; margin-bottom: 0.25rem;">Alamat</h4>
+          <p style="color: #4a4a4a; font-size: 0.875rem;">Jl. Usaha Mandiri No. 45, Kota Contoh</p>
+        </div>
+        <div class="demo-card">
+          <i class="fas fa-phone" style="color: #475569; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+          <h4 style="color: #0f172a; margin-bottom: 0.25rem;">Telepon</h4>
+          <p style="color: #4a4a4a; font-size: 0.875rem;">[Kontak Demo]</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="#" class="demo-cta" onclick="selectDesign('profil-usaha', 'Profil Usaha Mandiri'); return false;">
+          <i class="fab fa-whatsapp"></i> Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem;">&copy; 2026 Profil Usaha Mandiri - Demo Konsep Averix Web</p>
+      <p style="font-size: 0.75rem; opacity: 0.8;">Semua konten adalah contoh demo, bukan proyek pelanggan nyata</p>
+    </div>
+  </footer>
+
+  <a href="../pages/contoh-website.html" class="demo-back">
+    <i class="fas fa-arrow-left"></i> Kembali ke Galeri
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function selectDesign(id, name) {
+      const config = {
+        designId: id,
+        designName: name,
+        category: 'Profil Usaha',
+        timestamp: new Date().toISOString()
+      };
+      localStorage.setItem('averix_selected_design', JSON.stringify(config));
+      alert('Desain "' + name + '" telah dipilih! Pilihan ini tersimpan untuk dikembangkan lebih lanjut.');
+    }
+  </script>
+</body>
+</html>

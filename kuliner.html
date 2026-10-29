@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuliner Lezat - Demo | Averix Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .demo-header { background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%); color: white; padding: 2rem 0; }
+    .demo-nav { background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 50; }
+    .demo-nav-container { max-width: 1100px; margin: 0 auto; padding: 0.75rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+    .demo-logo { font-weight: 700; font-size: 1.25rem; color: #dc2626; display: flex; align-items: center; gap: 0.5rem; }
+    .demo-nav-links { display: flex; gap: 1.5rem; }
+    .demo-nav-links a { color: #1a1a1a; font-weight: 500; font-size: 0.9rem; }
+    .demo-hero { padding: 3rem 0; background: linear-gradient(135deg, #fef2f2 0%, #fff7ed 100%); }
+    .demo-hero-grid { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+    .demo-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 1.25rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .demo-item { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; }
+    .demo-item-img { height: 140px; background: linear-gradient(135deg, #fef3c7 0%, #fdba74 100%); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #ea580c; }
+    .demo-item-body { padding: 1rem; }
+    .demo-footer { background: #991b1b; color: white; padding: 2rem 0 1rem; text-align: center; }
+    .demo-back { position: fixed; bottom: 1.25rem; left: 1.25rem; background: white; color: #991b1b; padding: 0.625rem 1rem; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); font-weight: 600; display: flex; align-items: center; gap: 0.5rem; z-index: 100; }
+    .demo-cta { background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+    @media (max-width: 968px) { .demo-hero-grid { grid-template-columns: 1fr; } .demo-nav-links { display: none; } }
+  </style>
+</head>
+<body>
+  <header class="demo-header">
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; text-align: center;">
+      <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.15); padding: 0.375rem 0.875rem; border-radius: 20px; font-size: 0.75rem; margin-bottom: 0.75rem;">
+        <i class="fas fa-eye"></i> DEMO KONSEP - Bukan proyek pelanggan nyata
+      </div>
+      <h1 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem;">Kuliner Lezat</h1>
+      <p style="opacity: 0.95;">Tampilan menarik dengan foto makanan untuk restoran, cafe, atau kedai</p>
+    </div>
+  </header>
+
+  <nav class="demo-nav">
+    <div class="demo-nav-container">
+      <div class="demo-logo">
+        <div style="width: 36px; height: 36px; background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">K</div>
+        <span>Kuliner Lezat</span>
+      </div>
+      <div class="demo-nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <a href="#" class="demo-cta" onclick="selectDesign('kuliner', 'Kuliner Lezat'); return false;">
+        <i class="fab fa-whatsapp"></i> Pilih Desain Ini
+      </a>
+    </div>
+  </nav>
+
+  <section id="beranda" class="demo-hero">
+    <div class="demo-hero-grid">
+      <div>
+        <h2 style="font-size: 2rem; font-weight: 800; color: #991b1b; margin-bottom: 0.75rem;">Cita Rasa yang Menggoda</h2>
+        <p style="color: #4a4a4a; margin-bottom: 1.5rem; line-height: 1.8;">Menu lezat dengan bahan berkualitas, disajikan dengan penuh cinta. Cocok untuk keluarga dan teman.</p>
+        <a href="#menu" class="demo-cta" style="margin-right: 0.75rem;">Lihat Menu</a>
+        <a href="#" class="demo-cta" style="background: white; color: #dc2626; border: 2px solid #fecaca;" onclick="selectDesign('kuliner', 'Kuliner Lezat'); return false;">
+          <i class="fab fa-whatsapp"></i> Pesan Sekarang
+        </a>
+      </div>
+      <div class="demo-card" style="text-align: center; padding: 0; overflow: hidden;">
+        <div style="height: 220px; background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%); display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #ea580c;">
+          <i class="fas fa-pizza-slice"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 style="font-size: 1.75rem; font-weight: 800; color: #991b1b; text-align: center; margin-bottom: 0.5rem;">Menu Kami</h2>
+      <p style="text-align: center; color: #4a4a4a; margin-bottom: 2rem;">Berbagai hidangan lezat menanti</p>
+      <div class="demo-grid">
+        <div class="demo-item">
+          <div class="demo-item-img"><i class="fas fa-hamburger"></i></div>
+          <div class="demo-item-body">
+            <h4 style="color: #991b1b; margin-bottom: 0.375rem;">Burger Spesial</h4>
+            <p style="color: #ea580c; font-weight: 700; margin-bottom: 0.75rem;">Rp 35.000</p>
+            <a href="#" class="demo-cta" style="width: 100%; justify-content: center; font-size: 0.875rem;" onclick="selectDesign('kuliner', 'Kuliner Lezat'); return false;">
+              <i class="fab fa-whatsapp"></i> Pesan via WA
+            </a>
+          </div>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-img"><i class="fas fa-pizza-slice"></i></div>
+          <div class="demo-item-body">
+            <h4 style="color: #991b1b; margin-bottom: 0.375rem;">Pizza Mini</h4>
+            <p style="color: #ea580c; font-weight: 700; margin-bottom: 0.75rem;">Rp 45.000</p>
+            <a href="#" class="demo-cta" style="width: 100%; justify-content: center; font-size: 0.875rem;" onclick="selectDesign('kuliner', 'Kuliner Lezat'); return false;">
+              <i class="fab fa-whatsapp"></i> Pesan via WA
+            </a>
+          </div>
+        </div>
+        <div class="demo-item">
+          <div class="demo-item-img"><i class="fas fa-ice-cream"></i></div>
+          <div class="demo-item-body">
+            <h4 style="color: #991b1b; margin-bottom: 0.375rem;">Es Krim</h4>
+            <p style="color: #ea580c; font-weight: 700; margin-bottom: 0.75rem;">Rp 15.000</p>
+            <a href="#" class="demo-cta" style="width: 100%; justify-content: center; font-size: 0.875rem;" onclick="selectDesign('kuliner', 'Kuliner Lezat'); return false;">
+              <i class="fab fa-whatsapp"></i> Pesan via WA
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="demo-footer">
+    <div class="container">
+      <p style="margin-bottom: 0.5rem;">&copy; 2026 Kuliner Lezat - Demo Konsep Averix Web</p>
+      <p style="font-size: 0.75rem; opacity: 0.8;">Semua konten adalah contoh demo, bukan proyek pelanggan nyata</p>
+    </div>
+  </footer>
+
+  <a href="../pages/contoh-website.html" class="demo-back">
+    <i class="fas fa-arrow-left"></i> Kembali ke Galeri
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    function selectDesign(id, name) {
+      const config = {
+        designId: id,
+        designName: name,
+        category: 'Kuliner',
+        timestamp: new Date().toISOString()
+      };
+      localStorage.setItem('averix_selected_design', JSON.stringify(config));
+      alert('Desain "' + name + '" telah dipilih! Pilihan ini tersimpan untuk dikembangkan lebih lanjut.');
+    }
+  </script>
+</body>
+</html>
